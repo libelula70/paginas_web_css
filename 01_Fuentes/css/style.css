@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@font-face {font-family: Perman; src: url("../assets/PermanentMarker-Regular.ttf")}
+*,
+*::after, *::before,
+*:after, *:before {
+    box-sizing: border-box
+}
+
+body {
+    background-color: bisque
+}
+
+h1 {
+    font-family: Perman, cursive;
+}
+
+h2 {
+    font-family: pacifico, cursive;
+}
+
+p {
+    font-family: roboto, sans-serif
+}
+
