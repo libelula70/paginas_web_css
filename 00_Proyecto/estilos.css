@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box
+}
+
+header {
+    width: 50%;
+    float: left;
+    background-color: lightslategray;
+    color: darkslategray;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    line-height: 4rem;
+}
+
+nav {
+    width: 50%;
+    float: 50%;
+}
+
+nav ul {
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+    /* overflow: auto */
+}
+
+nav li {
+    display: block;
+    float: right;
+    width: 18%;
+    margin-right: -4px;
+    background-color: lightslategrey;
+}
+
+nav li:not(:last-child) {
+    margin-right: 2.5%;
+}
+
+nav a {
+    color: inherit;
+    background-color: lightpink;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border: solid silver 1px;
+    border-radius: 1rem;
+    display: inline-block;
+
+}
+
