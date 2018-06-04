@@ -17,7 +17,7 @@ header h1 {
 
 nav {
     width: 50%;
-    float: 50%;
+    /* float: 50%; */
 }
 
 nav ul {
@@ -54,3 +54,6 @@ nav a {
 
 }
 
+.clearfix {
+    clear: both;
+}
