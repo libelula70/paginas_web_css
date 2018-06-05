@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 2rem;
+}
+section div {
+    width: 50%;
+    float: left;
+}
+
+section div.img-wrapper {
+    display: none
+}
+section:hover div.img-wrapper {
+    display: block
+}
