@@ -1,0 +1,23 @@
+
+
+section>div {
+    width: 8rem;
+    height: 8rem;
+    background-color: lightsalmon;
+    opacity: 0.5;
+}
+
+section>div>div {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border: 1px solid;
+    background-color: lime;
+}
+
+aside>div {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(to left, lightsalmon, lime);
+}
