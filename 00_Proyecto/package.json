@@ -1,0 +1,19 @@
+{
+  "name": "00_Proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto Front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Ana Belén",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}

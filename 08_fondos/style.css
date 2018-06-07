@@ -1,0 +1,14 @@
+
+
+
+
+body {
+    /* border: 5px solid; */
+    height: 100%;
+	width: 100%;
+    background-image: url(./asset/nubes.png), url(./asset/mario.png), url(./asset/suelo.png);
+    background-position: left top, left bottom, left bottom;
+    background-repeat: repeat-x, no-repeat, repeat-x;
+    background-size: auto, 400px, auto;
+    background-color: #a4d3ff;
+}
