@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Dekko|Handlee|Josefin+Sans|Montserrat+Alternates|Zilla+Slab');
+
+
+section.uno {
+    width: 45%;
+    float: left;
+}
+section.uno h1 {
+    font-family: 'Handlee', cursive;
+}
+.uno h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.uno p {
+    font-family: 'Zilla Slab', serif;
+}
+section.dos h1 {
+    font-family: 'Dekko', cursive;
+}
+.dos h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.2rem;
+}
+
+.dos p {
+    font-family: 'Alegreya', serif;
+}
+
+section.tres {
+    overflow: auto;
+    
+}
+
+
+
+
+
