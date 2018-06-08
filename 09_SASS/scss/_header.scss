@@ -1,0 +1,19 @@
+$fondo: cornflowerblue;
+$fondo1: tomato;
+$fondo2: slategray;
+$margen1: 20%;
+$margen2: 10%;
+$margen3: $margen1 + $margen2;
+
+
+header {
+    width: 60%;
+    margin-left: $margen3;
+    margin-right: auto;
+    @import "_header2.scss";
+    
+    &:hover {
+        background-color:  lighten($fondo1, 15);
+    }
+    &:hover p {color: blueviolet;}
+}

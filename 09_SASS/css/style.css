@@ -1,17 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 2rem;
   background-color: bisque;
 }
-body header {
+
+header {
   width: 60%;
-  margin-left: auto;
+  margin-left: 30%;
   margin-right: auto;
 }
-body header h1 {
-  color: brown;
+header h1 {
+  color: blue;
+  margin-bottom: 0.3rem;
 }
-body header p {
+header p {
   font-size: 1.5rem;
+}
+header:hover {
+  background-color: #ffa494;
+}
+header:hover p {
+  color: blueviolet;
+}
+
+footer address p {
+  color: aqua;
+}
+footer p {
+  color: lime;
 }
 
 /*# sourceMappingURL=css/style.css.map */
