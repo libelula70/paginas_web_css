@@ -8,12 +8,13 @@ body {
 
 div {
     width: 50%;
-    height: 30%;
+    height: 40%;
     background-color: lightcoral;
     padding: 2rem;
     position: absolute;
-    top: 25%;
-    left: 15%;
-    /* margin-top: -25%;
-    margin-left: -15%; */
+    // top: 25%; /* 50% -1/2 alto */
+    // left: 35%; /* 50% -1/2 ancho */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }

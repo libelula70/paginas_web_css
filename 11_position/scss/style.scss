@@ -1,9 +1,11 @@
+
+
 * {
     box-sizing: border-box
 }
 
 body {
-    margin-left: 10%;
+    @include reset ();
 }
 div {
     /* position: relative; */
