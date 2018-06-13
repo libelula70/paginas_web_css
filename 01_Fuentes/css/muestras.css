@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Dekko|Handlee|Josefin+Sans|Montserrat+Alternates|Zilla+Slab');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Crimson+Text|Nunito:200,300,400,600,700|Dekko|Handlee|Josefin+Sans|Montserrat+Alternates|Zilla+Slab');
 
-
-section.uno {
-    width: 45%;
-    float: left;
+* {
+    box-sizing: border-box
 }
+
+section {
+    width: 50%;
+    float: left;
+    padding: 2rem;
+}
+
 section.uno h1 {
     font-family: 'Handlee', cursive;
 }
@@ -27,12 +32,55 @@ section.dos h1 {
     font-family: 'Alegreya', serif;
 }
 
-section.tres {
-    overflow: auto;
-    
+.tres h1 {
+    font-family: 'Handlee', cursive;    
 }
 
+.tres h2 {
+    font-family: 'Zilla Slab', serif;
+}
 
+.tres p {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 
+.cuatro h1 {
+    font-family: 'Handlee', cursive;    
+}
 
+.cuatro h2 {
+    font-family: 'Crimson Text', serif;
+}
 
+.cuatro p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.cinco h1 {
+    font-family: 'Handlee', cursive;    
+}
+
+.cinco h2 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.cinco p {
+    font-family: 'Crimson Text', serif;
+}
+
+.seis h1 {
+    font-family: 'Handlee', cursive;    
+}
+
+.seis h2 {
+    /* font-weight: 500; */
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.seis p {
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    overflow: auto;
+}
