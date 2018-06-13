@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+div {
+  width: 50%;
+  height: 30%;
+  background-color: lightcoral;
+  padding: 2rem;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  /* margin-top: -25%;
+  margin-left: -15%; */
+}
+
+/*# sourceMappingURL=css/caja.css.map */

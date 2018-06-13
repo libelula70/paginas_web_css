@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin-left: 10%;
+}
+div {
+    /* position: relative; */
+    width: 50%;
+    background-color: lightblue;
+    padding: 2rem;
+    margin: 1rem;
+
+    p {
+        padding: 2rem;
+        background-color: darkolivegreen;
+    }
+}
+
+.relative {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+}
+
+.absolute {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 10%
+        
+}
