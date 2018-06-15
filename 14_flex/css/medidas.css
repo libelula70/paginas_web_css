@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    background-color: lightgrey;
+}
+section {
+    border: 1px solid;
+    width: 100px;
+    height: 300px;
+}
+
+
+div {
+    width: 20%;
+    height: 20%;
+    margin: 50%;
+    background-color: lightsalmon;
+    border: 1px solid;
+}
