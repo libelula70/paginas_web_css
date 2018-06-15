@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightpink;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+}
+
+footer {
+  border-top: 1px solid;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    font-family: "Eater", cursive;
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper-flex {
+    display: flex;
+  }
+  .wrapper-flex section {
+    flex: 0 1 75%;
+    padding: 0.5rem 1rem;
+  }
+  .wrapper-flex aside {
+    flex: 0 1 25%;
+    padding: 0.5rem 1rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper-column {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=css/style.css.map */
