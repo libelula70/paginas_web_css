@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: bisque;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 1rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border: 2px solid darkred;
+  margin-right: 0.5rem;
+  background-color: green;
+  color: cornsilk;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+}
+
+a.volver {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border: 2px solid darkred;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: green;
+  color: cornsilk;
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+}
+
+a:not(a.url_fn_n, .email) h1 {
+  text-align: center;
+  color: darkred;
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 1.2rem;
+  margin-top: 5rem;
+}
+
+section#inicio div.container-img > img {
+  float: left;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+}
+section#inicio div.container-img::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section#geografia .geografia {
+  display: flex;
+}
+section#geografia img {
+  flex: 0 1 33%;
+  padding: 2rem;
+}
+section#geografia p {
+  flex: 0 1 33%;
+  padding: 2rem;
+}
+section#geografia table {
+  flex: 0 1 33%;
+  padding: 2rem;
+}
+
+section#historia article {
+  overflow: hidden;
+}
+section#historia article figure {
+  float: right;
+  width: 45%;
+}
+
+/*# sourceMappingURL=css/style.css.map */
