@@ -1,0 +1,18 @@
+
+
+h1 {
+    font-size: 2rem;
+    color: brown;
+    opacity: 0.5;
+    border: 1px solid;
+    /* transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(.41,.08,.36,.88); */
+    transition: all 1s linear;
+    &:hover {
+        font-size: 3rem;
+        color: blueviolet;
+        opacity: 1;
+    }
+}
