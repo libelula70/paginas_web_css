@@ -6,20 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Eater|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <title>RWD</title>
 </head>
 <body>
     <header>
         <h1>RWD</h1>
+        <nav>
+            <a class="fas fa-bars" href="#boton-menu"></a>
+        </nav>
+
     </header>
+    <nav class="hide-menu menu-mobile menu-desk" id="top-menu"><ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#">Ebooks</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Revistas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+            </li>
+            <li>
+                <a href="#">Usuarios</a>
+            </li>
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
     <div class="wrapper-flex">
     <section>
         <h2>Section</h2>
+<figure>
+        <img src="http://via.placeholder.com/650x250">
+    </figure>
         <div class="wrapper-column">
+            <div class="wrapper-item-flex">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt temporibus sequi quos magnam fugit dolore laudantium commodi alias pariatur at quaerat adipisci, eum error nostrum facere! Ipsum nisi aliquid quas.</p>
         <p>Eius sunt reiciendis autem commodi aperiam tenetur earum corporis rem perspiciatis, nesciunt quos consequuntur minima fugit architecto nulla ea modi. Soluta incidunt asperiores voluptas. Necessitatibus illo repellat eligendi modi quia.</p>
+    </div>
+    <div class="wrapper-item-flex">
         <p>Excepturi omnis, et temporibus modi magni dolor eligendi nihil. Adipisci, excepturi ut! Natus rerum, eligendi blanditiis recusandae similique voluptates aperiam ratione quidem reiciendis aliquid animi nulla voluptatibus repudiandae consequuntur adipisci.</p>
         <p>Inventore debitis quos provident, facilis incidunt eos dolorem asperiores natus voluptates beatae illum, sequi eius. Perspiciatis hic quisquam minus labore nobis quis repellendus sed odio omnis. Nam est tenetur provident?</p>
+    </div>
     </div>
     </section>
     <aside>
@@ -29,6 +64,30 @@
         <p>Voluptas asperiores laudantium saepe illo assumenda, cum explicabo ea omnis voluptates quod odit debitis tempora natus repellat sequi nostrum nesciunt placeat doloremque! Distinctio provident illum aliquam delectus fuga, maxime dicta.</p>
     </aside>
 </div>
+<nav class="bottom-menu menu-mobile" id="bottom-menu"><ul>
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Productos</a>
+            <ul>
+                <li><a href="#">Ebooks</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Revistas</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Servicios</a>
+        </li>
+        <li>
+            <a href="#">Usuarios</a>
+        </li>
+        <li>
+            <a href="#">Nosotros</a>
+        </li>
+    </ul>
+</nav>
+
     <footer>
         <address>Ana Belén</address>
     </footer>
