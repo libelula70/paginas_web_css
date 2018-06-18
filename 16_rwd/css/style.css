@@ -11,31 +11,42 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
 header nav {
   font-size: 2rem;
 }
 
 nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 nav a {
   color: inherit;
   text-decoration: none;
 }
 
-h1 {
-  font-family: "Lobster", cursive;
-  font-size: 2rem;
+ul li ul li {
+  padding-left: 1rem;
 }
 
-nav.bottom-menu {
+nav.menu-mobile,
+nav.menu-desk {
   background-color: lightblue;
 }
-nav.bottom-menu a {
-  padding-top: 0.5rem;
+nav.menu-mobile a,
+nav.menu-desk a {
+  padding: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   display: block;
+}
+nav.menu-mobile a:hover,
+nav.menu-desk a:hover {
+  background-color: lightpink;
 }
 
 nav.hide-menu {
@@ -57,51 +68,47 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightblue;
-  }
-
+@media screen and (min-width: 620px) {
   h1 {
     font-family: "Eater", cursive;
     font-size: 2.3rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 3rem;
+    padding-left: 1rem;
   }
 
   .wrapper-flex {
     display: flex;
   }
   .wrapper-flex section {
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex: 0 1 75%;
-    padding: 0.5rem 1rem;
   }
   .wrapper-flex aside {
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex: 0 1 25%;
-    padding: 0.5rem 1rem;
   }
 }
 @media screen and (min-width: 820px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-left: 2rem;
   }
-  header nav {
+
+  nav {
     display: none;
   }
 
-  nav.bottom-menu {
+  nav.menu-mobile {
     display: none;
   }
 
   nav.menu-desk {
     display: block;
+    background-color: lightblue;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 1.2rem;
   }
   nav.menu-desk ul {
     display: flex;
@@ -109,40 +116,49 @@ footer {
   nav.menu-desk ul li {
     position: relative;
   }
-  nav.menu-desk ul li:hoover ul {
+  nav.menu-desk ul li:hover ul {
     display: block;
   }
   nav.menu-desk a {
     padding: 0.5rem 1rem;
     display: block;
   }
-  nav.menu-desk a:hoover {
+  nav.menu-desk a:hover {
     background-color: lightpink;
   }
-
-  .submenu {
+  nav.menu-desk .submenu {
     display: none;
     position: absolute;
-    top: 2rem;
-    left: -2rem;
-    background-color: lightpink;
+    top: 2.1rem;
+    left: 0rem;
+    background-color: #dd5166;
   }
-}
-.wrapper-column {
-  /*  column-count: 2;
-   column-gap: 2rem; */
-  display: flex;
-}
-.wrapper-column .wrapper-item-flex {
-  width: 50%;
-  padding: 0 1rem;
-}
-.wrapper-column .wrapper-item-flex p:nth-of-type(1) {
-  margin-top: 0;
-}
+  nav.menu-desk .submenu li {
+    padding-left: 0;
+  }
+  nav.menu-desk .submenu li a {
+    width: 96px;
+  }
 
-nav section h2 {
-  padding-left: 1rem;
+  .wrapper-column {
+    /*  column-count: 2;
+     column-gap: 2rem; */
+    display: flex;
+  }
+  .wrapper-column .wrapper-item-flex {
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .wrapper-column .wrapper-item-flex p:nth-of-type(1) {
+    margin-top: 0;
+  }
+
+  section {
+    background-color: #dd5166;
+  }
+  section h2 {
+    padding-left: 1rem;
+  }
 }
 
 /*# sourceMappingURL=css/style.css.map */

@@ -1,4 +1,4 @@
-$color_main: lightblue;
+$color_hover: lightblue;
 $color_back: lightpink;
 
 
@@ -7,39 +7,53 @@ $color_back: lightpink;
 }
 
 body {
-    background-color: lightpink;
+    background-color: $color_back;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h1 {
+        font-family: 'Lobster', cursive;
+        font-size: 2rem;
+    }
     nav {
     font-size: 2rem;
-}
+    }
 }
 nav {
     ul {list-style: none;
+        padding: 0;
+        margin: 0;
     }
-    a {color: inherit;
+    a {
+        color: inherit;
         text-decoration: none;
     }
 }
-
-
-h1 {
-        font-family: 'Lobster', cursive;
-        font-size: 2rem;
-
+ul {
+    li {
+        ul {
+            li {
+                padding-left: 1rem;
+            }
+        }
     }
+}
 
-nav.bottom-menu {
-    background-color: $color_main;
+nav.menu-mobile,
+nav.menu-desk {
+    background-color: $color_hover;
     
     a {
-        padding-top: 0.5rem;
+        padding: 0.5rem;
         padding-bottom: 0.5rem;
         padding-left: 1rem;
         display: block;
+
+        &:hover {
+            background-color: $color_back;
+        }
 
     }
 
@@ -65,78 +79,82 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 480px) {
-     body {
-        background-color: lightblue;
-    }
+@media screen and (min-width: 620px) {
     h1 {
         font-family: 'Eater', cursive;
         font-size: 2.3rem;
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
-    h1 {
-        font-size: 3rem;
+        padding-left: 1rem;
     }
     .wrapper-flex {
         display: flex;
-        
-
         section {
+            padding-left: 1rem;
+            padding-right: 1rem;
             flex: 0 1 75%;
-            padding: 0.5rem 1rem;
         }
         aside {
+            padding-left: 1rem;
+            padding-right: 1rem;
             flex: 0 1 25%;
-            padding: 0.5rem 1rem;
         }
     }
 }
+    
 
 @media screen and (min-width: 820px) {
     header {
         h1 {
-        font-size: 2.5rem;
-        padding-left: 2rem;
-    }
+                font-size: 3rem;
+                padding-left: 2rem;
+            }
+        
+        }
     nav {
         display: none;
     }
-}
-    nav.bottom-menu {
+    
+    nav.menu-mobile {
         display: none;
     }
+
     nav.menu-desk {
         display: block;
+        background-color: $color_hover;
         position: absolute;
         right: 0;
-        top: 0;
+        top: 1.2rem;
         ul {
             display: flex;
-            li {
-                position: relative;
-            &:hoover ul {
+        li {
+            position: relative;
+            &:hover ul {
                 display: block;
-            }    
-        }
-    }
-        a {
-            padding: 0.5rem 1rem;
-            display: block;
-            &:hoover {
-                background-color: lightpink;
             }
         }
+    }
+    
+    a {
+        padding: 0.5rem 1rem;
+        display: block;
+        &:hover {
+            background-color: $color_back;
+        }
+        
     }
 
         .submenu {
             display: none;
             position: absolute;
-            top: 2rem;
-            left: -2rem;
-            background-color: lightpink
+            top: 2.1rem;
+            left: 0rem;
+            background-color: rgb(221, 81, 102);
+
+            li {
+                padding-left: 0;
+                a {
+                    width: 96px;
+                }
+            }
         }
         
     }
@@ -153,9 +171,8 @@ footer {
         }
     }
 }
-    nav {
-   
-    section {
+section {
+    background-color: rgb(221, 81, 102);
         h2 {
             padding-left: 1rem;
         }
