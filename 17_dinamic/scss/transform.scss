@@ -1,0 +1,48 @@
+
+
+body {
+    margin-left: 2rem;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+div {
+    width: 10rem;
+    height: 10rem;
+    background-color: maroon;
+    transition: transform 3s linear;
+}
+
+button {
+    margin-bottom: 2rem;
+}
+
+.rotate {
+    button:hover+div {
+        transform: rotate(45deg);
+        /* transform-origin: top left; */
+    }
+}
+
+
+.skew {
+    button:hover+div {
+        transform: skew(-45deg, 20deg);
+        
+    }
+}
+
+.scale {
+    button:hover+div {
+        transform: scale(1.5);
+        transform-origin: top left;
+    }
+}
+
+.translate {
+    button:hover+div {
+        transform: translate(10rem, 10rem);
+    }
+}
