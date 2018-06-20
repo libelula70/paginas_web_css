@@ -108,3 +108,14 @@ section#historia {
         }
     }
 }
+
+footer  {
+    position: relative;
+    margin-top: 3rem;
+    border-top: 2px solid gray;
+    padding: 1rem;
+
+}
+.email, .adr, .tel {
+    text-align: right;
+}

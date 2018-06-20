@@ -91,4 +91,15 @@ section#historia article figure {
   width: 45%;
 }
 
+footer {
+  position: relative;
+  margin-top: 3rem;
+  border-top: 2px solid gray;
+  padding: 1rem;
+}
+
+.email, .adr, .tel {
+  text-align: right;
+}
+
 /*# sourceMappingURL=css/style.css.map */
