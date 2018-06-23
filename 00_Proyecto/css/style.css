@@ -3,103 +3,149 @@
 }
 
 body {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  background-color: bisque;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 1rem;
+figure {
+  margin: 0;
 }
-nav ul li {
-  list-style: none;
-}
-nav ul li a {
-  color: inherit;
-  text-decoration: none;
-  padding: 0.5rem 2rem;
-  border: 2px solid darkred;
-  margin-right: 0.5rem;
-  background-color: green;
-  color: cornsilk;
-  font-family: "Pacifico", cursive;
-  font-size: 1.2rem;
+figure img {
+  width: 100%;
+  max-width: 620px;
 }
 
-a.volver {
-  color: inherit;
-  text-decoration: none;
-  padding: 0.5rem 2rem;
-  border: 2px solid darkred;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  background-color: green;
-  color: cornsilk;
-  font-family: "Pacifico", cursive;
-  font-size: 1.2rem;
+nav.menu-desk {
+  display: none;
 }
 
-a:not(a.url_fn_n, .email) h1 {
-  text-align: center;
-  color: darkred;
-  font-family: "Permanent Marker", cursive;
-  font-size: 3rem;
+h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  text-align: left;
+  color: darkslategrey;
+  background-color: cadetblue;
+  font-family: "Markazi+Text", cursive;
+  font-size: 2rem;
 }
 
 h2 {
-  font-family: "Pacifico", cursive;
+  font-family: "Markazi+Text", cursive;
   font-size: 1.2rem;
   margin-top: 5rem;
 }
 
-section#inicio div.container-img > img {
-  float: left;
-  margin-right: 10rem;
-  margin-bottom: 2rem;
-}
-section#inicio div.container-img::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-section#geografia .geografia {
+nav.menu-footer ul {
   display: flex;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: cadetblue;
 }
-section#geografia img {
-  flex: 0 1 33%;
-  padding: 2rem;
+nav.menu-footer ul li {
+  border: 1px, solid;
+  list-style: none;
 }
-section#geografia p {
-  flex: 0 1 33%;
-  padding: 2rem;
-}
-section#geografia table {
-  flex: 0 1 33%;
-  padding: 2rem;
-}
-
-section#historia article {
-  overflow: hidden;
-}
-section#historia article figure {
-  float: right;
-  width: 45%;
+nav.menu-footer ul li a {
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  background-color: black;
+  color: white;
 }
 
 footer {
-  position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-top: 2px solid gray;
   padding: 1rem;
 }
+footer p {
+  text-align: center;
+}
 
-.email, .adr, .tel {
-  text-align: right;
+@media screen and (min-width: 620px) {
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../asset/Mapa_Italia_1440x810.jpg);
+  }
+
+  /* a.volver {
+      color: inherit;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      border: 2px solid darkred;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      background-color: green;
+      color: cornsilk;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.2rem;
+  } */
+  /* a:not(a.url_fn_n, .email) */
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: darkred;
+    font-family: "Permanent Marker", cursive;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
+
+  section#geografia .geografia {
+    display: flex;
+  }
+  section#geografia img {
+    flex: 0 1 33%;
+    padding: 2rem;
+  }
+  section#geografia p {
+    flex: 0 1 33%;
+    padding: 2rem;
+  }
+  section#geografia table {
+    flex: 0 1 33%;
+    padding: 2rem;
+  }
+
+  section#historia article {
+    overflow: hidden;
+  }
+  section#historia article figure {
+    float: right;
+    width: 45%;
+  }
+
+  nav.menu-mobile ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  nav.menu-mobile ul li {
+    list-style: none;
+  }
+  nav.menu-mobile ul li a {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=css/style.css.map */
