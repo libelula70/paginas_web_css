@@ -1,3 +1,9 @@
+$font_titulos: 'Markazi+Text', cursive;
+$background_titulos: lightskyblue;
+$color_titulos: rgb(87, 39, 22);
+
+ 
+
 * {
     box-sizing: border-box
 }
@@ -7,6 +13,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif; 
+    font-size: .9rem;
+    color: rgb(41, 39, 39);
 }
 
 figure {
@@ -15,39 +23,70 @@ figure {
         width: 100%;
         max-width: 620px;
     }
-}
-nav {
-    color: black;
-    font-weight: 700;
-    font-size: 2rem;
-
-}
-nav.menu-desk {
-    display: none;
+    figcaption {
+        font-size: .8rem;
+        color: darkblue;
+    }
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    padding-left: .5rem;
-    text-align: left;
-    color: black;
-    font-weight: 700;
-    font-family: 'Markazi+Text', cursive;
-    font-size: 2rem;
-    background-color: cadetblue;
+table {
+    tr {
+        th, td {
+        border: 1px solid;
+        }
+    }
 }
+a:not(footer a) {
+    color: inherit;
+}
+
+div.wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background_titulos;   
+
+    nav.burguer {
+        a {
+        color: rgb(41, 39, 39);
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: none;
+        }
+    }
+
+    nav.menu-desk {
+        display: none;
+    }   
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        color: $color_titulos;
+        font-weight: 700;
+        font-family: $font_titulos;
+        font-size: 2rem;
+   
+    }
+}
+
 
 h2 {
-    font-family: 'Markazi+Text', cursive;
     font-size: 1.2rem; 
-    margin-top: 5rem;
+    margin-top: 1rem;
+    font-family: $font_titulos;
+    background-color: $background_titulos;
+}
+h3 {
+    font-size: 1.1rem;
+    width: max-content;
+    font-family: $font_titulos;
+    background-color: $background_titulos;
 }
 
 nav.menu-footer { 
     
     ul {
-       
         display: flex;
         justify-content: space-around;
         margin-top: 0;
@@ -61,11 +100,11 @@ nav.menu-footer {
             border: 1px, solid;
             list-style: none;
             a {
+                color: inherit;
                 text-decoration: none;
                 padding: 0.5rem .5rem;
                 font-family: 'Roboto', sans-serif;
                 font-size: 0.8rem;
-                color: black;
                 font-weight: 700;
             }
         }
@@ -73,46 +112,39 @@ nav.menu-footer {
     }
 }
 
+a.menu-desk {
+    display: none;
+}
 
 footer  {
     margin-top: 2rem;
     border-top: 2px solid gray;
-    padding: 1rem;
-    p {
-        text-align: center;
-    }
+    text-align: center;
 }    
     
 
 @media screen and (min-width:620px) {
-header {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../asset/Mapa_Italia_1440x810.jpg);
 
-    
+div.wrapper-flex  {
+    nav.burguer {
+        display: none;
+    }
+    nav.menu-desk {
+        display: block;
+      
+        a.menu-desk {
+            color: inherit;
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            border: 2px solid darkred;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+        }
+    }
 }
 
-
-   
-
-
-/* a.volver {
-    color: inherit;
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    border: 2px solid darkred;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    background-color: green;
-    color: cornsilk;
-    font-family: 'Pacifico', cursive;
-    font-size: 1.2rem;
-} */
-
-/* a:not(a.url_fn_n, .email) */
 
 h1 {
     margin: 0;

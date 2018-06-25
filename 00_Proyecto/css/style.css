@@ -6,6 +6,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  color: #292727;
 }
 
 figure {
@@ -15,33 +17,55 @@ figure img {
   width: 100%;
   max-width: 620px;
 }
+figure figcaption {
+  font-size: 0.8rem;
+  color: darkblue;
+}
 
-nav {
-  color: black;
+table tr th, table tr td {
+  border: 1px solid;
+}
+
+a:not(footer a) {
+  color: inherit;
+}
+
+div.wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightskyblue;
+}
+div.wrapper-flex nav.burguer a {
+  color: #292727;
   font-weight: 700;
   font-size: 2rem;
+  text-decoration: none;
 }
-
-nav.menu-desk {
+div.wrapper-flex nav.menu-desk {
   display: none;
 }
-
-h1 {
+div.wrapper-flex h1 {
   margin: 0;
   padding: 0;
-  padding-left: 0.5rem;
   text-align: left;
-  color: black;
+  color: #572716;
   font-weight: 700;
   font-family: "Markazi+Text", cursive;
   font-size: 2rem;
-  background-color: cadetblue;
 }
 
 h2 {
-  font-family: "Markazi+Text", cursive;
   font-size: 1.2rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  font-family: "Markazi+Text", cursive;
+  background-color: lightskyblue;
+}
+
+h3 {
+  font-size: 1.1rem;
+  width: max-content;
+  font-family: "Markazi+Text", cursive;
+  background-color: lightskyblue;
 }
 
 nav.menu-footer ul {
@@ -60,45 +84,42 @@ nav.menu-footer ul li {
   list-style: none;
 }
 nav.menu-footer ul li a {
+  color: inherit;
   text-decoration: none;
   padding: 0.5rem 0.5rem;
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
-  color: black;
   font-weight: 700;
+}
+
+a.menu-desk {
+  display: none;
 }
 
 footer {
   margin-top: 2rem;
   border-top: 2px solid gray;
-  padding: 1rem;
-}
-footer p {
   text-align: center;
 }
 
 @media screen and (min-width: 620px) {
-  header {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../asset/Mapa_Italia_1440x810.jpg);
+  div.wrapper-flex nav.burguer {
+    display: none;
+  }
+  div.wrapper-flex nav.menu-desk {
+    display: block;
+  }
+  div.wrapper-flex nav.menu-desk a.menu-desk {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    border: 2px solid darkred;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
-  /* a.volver {
-      color: inherit;
-      text-decoration: none;
-      padding: 0.5rem 2rem;
-      border: 2px solid darkred;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
-      background-color: green;
-      color: cornsilk;
-      font-family: 'Pacifico', cursive;
-      font-size: 1.2rem;
-  } */
-  /* a:not(a.url_fn_n, .email) */
   h1 {
     margin: 0;
     text-align: center;
