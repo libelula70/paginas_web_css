@@ -18,7 +18,7 @@ body {
   color: #292727;
 }
 
-.main-wrapper {
+section:not(figure) {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -42,10 +42,11 @@ table tr th, table tr td {
 div.wrapper-flex {
   display: flex;
   justify-content: space-between;
-  background-color: lightskyblue;
+  /* background-color: $background_titulos; */
   border-bottom: 2px solid olive;
 }
 div.wrapper-flex nav.burguer a {
+  padding-top: 0.5rem;
   font-weight: 700;
   font-size: 2.5rem;
 }
@@ -63,6 +64,7 @@ div.wrapper-flex h1 {
 h2 {
   font-size: 1.5rem;
   margin-top: 1rem;
+  padding-bottom: 0.3rem;
   font-family: "Markazi+Text", cursive;
   color: #292727;
   border-bottom: 2px solid olive;
@@ -70,30 +72,47 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
+  padding: 0.3rem;
   width: max-content;
   font-family: "Markazi+Text", cursive;
   color: #292727;
   background-color: olive;
 }
 
-nav.menu-footer ul {
+nav.menu-footer ul, nav.menu-desk ul {
   display: flex;
   justify-content: space-around;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
-nav.menu-footer ul li {
-  border: 1px, solid;
+nav.menu-footer ul li, nav.menu-desk ul li {
   list-style: none;
 }
-nav.menu-footer ul li a {
+nav.menu-footer ul li a, nav.menu-desk ul li a {
+  display: block;
   color: inherit;
   text-decoration: none;
-  padding: 0.5rem 0.5rem;
-  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 700;
+}
+nav.menu-footer ul li a:hover, nav.menu-desk ul li a:hover {
+  background-color: olive;
+  color: lightskyblue;
+}
+
+a.ir-desk, a.ir-footer {
+  display: block;
+  width: 15%;
+  padding: 0.6rem 1rem;
+  background-color: cadetblue;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+a.ir-desk:hover, a.ir-footer:hover {
+  background-color: olive;
+  color: lightskyblue;
 }
 
 a.ir-desk {
@@ -107,10 +126,6 @@ footer {
 }
 
 @media screen and (min-width: 620px) {
-  .main-wrapper {
-    width: 80%;
-  }
-
   a.ir-footer {
     display: none;
   }
@@ -125,29 +140,16 @@ footer {
   div.wrapper-flex nav.menu-desk {
     display: block;
   }
-  div.wrapper-flex nav.menu-desk a.menu-desk {
-    padding: 0.5rem 2rem;
-    border: 2px solid darkred;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+  div.wrapper-flex nav.menu-desk ul li a {
+    padding: 1.1rem 1rem;
+    font-size: 1.1rem;
   }
 
-  h1 {
-    margin: 0;
-    text-align: center;
-    color: darkred;
-    font-family: "Permanent Marker", cursive;
-    font-size: 3rem;
+  nav.menu-footer {
+    display: none;
   }
-
-  h2 {
-    font-family: "Pacifico", cursive;
-    font-size: 1.2rem;
-    margin-top: 5rem;
-  }
-
+}
+@media screen and (min-width: 900px) {
   section#geografia .geografia {
     display: flex;
   }
