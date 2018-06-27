@@ -30,25 +30,26 @@ section {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    
-    &:not(figure) {
-        
-    }
-}
 
-figure {
-    margin: 0;
-    
-    img {
-        width: 100%;
-}
+    figure {
+        margin-left: -2.5%;
+        margin-right: -2.5%
+    }
     figcaption {
         font-size: .8rem;
         color: $c_pie-pagina;
     }
 }
 
+
+figure {
+    img {
+        width: 100%;
+    }
+}
+
 table {
+    margin-bottom: 1rem;
     tr {
         th, td {
         border: 1px solid;
@@ -59,7 +60,6 @@ table {
 div.wrapper-flex {
     display: flex;
     justify-content: space-between;
-    /* background-color: $background_titulos; */
     border-bottom: 2px solid $borde;
 
     nav.burguer {
@@ -69,28 +69,30 @@ div.wrapper-flex {
         font-size: 2.5rem;
         }
     }
-
-    nav.menu-desk {
-        display: none;
-    }   
-
     h1 {
         text-align: left;
         color: $color_titulos;
         font-family: $font_titulos;
         font-weight: 700;
         font-size: 2.5rem;
-        }
     }
-
+}
+nav.menu-desk {
+        display: none;
+}   
 
 h2 {
     font-size: 1.5rem; 
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+    padding-left: 2.5%;
     padding-bottom: 0.3rem;
     font-family: $font_titulos;
     color: $color_titulos;
     border-bottom: 2px solid $borde;
+    
 }
 h3 {
     font-size: 1.1rem;
@@ -106,7 +108,9 @@ nav.menu-footer, nav.menu-desk {
     ul {
         display: flex;
         justify-content: space-around;
-        /* background-color: cadetblue; */
+        border-bottom: 2px solid $borde;
+        border-top: 2px solid $borde;
+        margin-bottom: 2rem;
         
         li {
             list-style: none;
@@ -131,7 +135,7 @@ nav.menu-footer, nav.menu-desk {
 
 a.ir-desk, a.ir-footer {
     display: block;
-    width: 15%;
+    width: 90px;
     padding: 0.6rem 1rem;
     background-color: cadetblue;
     font-weight: 700;
@@ -151,13 +155,19 @@ a.ir-desk {
 
 footer  {
     margin-top: 2rem;
-    border-top: 2px solid gray;
-    text-align: center;
+        
+    address {
+        text-align: center;
+        font-size: .9rem;
+    }
 }    
     
 
 @media screen and (min-width:620px) {
     
+    h1 {
+        padding-left: 2.5%;
+    }
     a.ir-footer {
         display: none;
     }
@@ -169,74 +179,100 @@ footer  {
         nav.burguer {
             display: none;
         }
-        nav.menu-desk {
-            display: block;
-            ul {
-                li {
-                    a {
-                        padding: 1.1rem 1rem;
-                        font-size: 1.1rem; 
-                    }
+    }
+    nav.menu-desk {
+        display: block;
+        ul {
+            li {
+                a {
+                    padding: 1.1rem 1rem;
+                    font-size: 1.1rem; 
                 }
             }
         }
     }
+    
 
     nav.menu-footer {
         display: none;
+        }
+
+    footer {
+        address {
+            padding-top: 1rem;
+            border-top: 2px solid gray;
+        }
     }
 }
 
 @media screen and (min-width:900px) {
-section#geografia {
-    .geografia {
-        display: flex;
-        
-    }
-    img {
-        flex: 0 1 33%;
-        padding: 2rem;
-    }
-    p {
-        flex: 0 1 33%;
-        padding: 2rem;
-    }
-    table {
-        flex: 0 1 33%;
-        padding: 2rem;
-    }
-
-
-}
-
-section#historia {
-    article {
-        overflow: hidden;
+    section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    
         figure {
-            float: right;
-            width: 45%;
+            margin-left: 2%;
+            margin-bottom: 2rem;
         }
     }
-}
-nav.menu-mobile { 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-        li {
-            list-style: none;
-            a {
-                text-decoration: none;
-                padding: 0.5rem 2rem;
-                font-family: 'Roboto', sans-serif;
-                font-size: 0.8rem;
+
+    h1 {
+        padding-left: 5%;
+    }
+    h2 {
+        margin-left: -5%;
+        margin-right: -5%;
+        padding-left: 5%
+    }
+
+    section#geografia {
+        .geografia {
+            display: flex;
+            
+        }
+        img {
+            flex: 0 1 33%;
+            padding: 2rem;
+        }
+        p {
+            flex: 0 1 33%;
+            padding: 2rem;
+        }
+        table {
+            flex: 0 1 33%;
+            padding: 2rem;
+        }
+    }
+
+    section#historia {
+        article {
+            overflow: hidden;
+            figure {
+                float: right;
+                width: 45%;
             }
         }
-    
     }
-}
+    nav.menu-mobile { 
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    padding: 0.5rem 2rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 0.8rem;
+                }
+            }
+        
+        }
+    }
 
 }
 

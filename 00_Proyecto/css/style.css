@@ -23,17 +23,22 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-figure {
-  margin: 0;
+section figure {
+  margin-left: -2.5%;
+  margin-right: -2.5%;
 }
-figure img {
-  width: 100%;
-}
-figure figcaption {
+section figcaption {
   font-size: 0.8rem;
   color: darkblue;
 }
 
+figure img {
+  width: 100%;
+}
+
+table {
+  margin-bottom: 1rem;
+}
 table tr th, table tr td {
   border: 1px solid;
 }
@@ -41,16 +46,12 @@ table tr th, table tr td {
 div.wrapper-flex {
   display: flex;
   justify-content: space-between;
-  /* background-color: $background_titulos; */
   border-bottom: 2px solid olive;
 }
 div.wrapper-flex nav.burguer a {
   padding-top: 0.5rem;
   font-weight: 700;
   font-size: 2.5rem;
-}
-div.wrapper-flex nav.menu-desk {
-  display: none;
 }
 div.wrapper-flex h1 {
   text-align: left;
@@ -60,9 +61,17 @@ div.wrapper-flex h1 {
   font-size: 2.5rem;
 }
 
+nav.menu-desk {
+  display: none;
+}
+
 h2 {
   font-size: 1.5rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: -2.5%;
+  margin-right: -2.5%;
+  padding-left: 2.5%;
   padding-bottom: 0.3rem;
   font-family: "Markazi+Text", cursive;
   color: #292727;
@@ -81,7 +90,9 @@ h3 {
 nav.menu-footer ul, nav.menu-desk ul {
   display: flex;
   justify-content: space-around;
-  /* background-color: cadetblue; */
+  border-bottom: 2px solid olive;
+  border-top: 2px solid olive;
+  margin-bottom: 2rem;
 }
 nav.menu-footer ul li, nav.menu-desk ul li {
   list-style: none;
@@ -101,7 +112,7 @@ nav.menu-footer ul li a:hover, nav.menu-desk ul li a:hover {
 
 a.ir-desk, a.ir-footer {
   display: block;
-  width: 15%;
+  width: 90px;
   padding: 0.6rem 1rem;
   background-color: cadetblue;
   font-weight: 700;
@@ -120,11 +131,17 @@ a.ir-desk {
 
 footer {
   margin-top: 2rem;
-  border-top: 2px solid gray;
+}
+footer address {
   text-align: center;
+  font-size: 0.9rem;
 }
 
 @media screen and (min-width: 620px) {
+  h1 {
+    padding-left: 2.5%;
+  }
+
   a.ir-footer {
     display: none;
   }
@@ -136,10 +153,11 @@ footer {
   div.wrapper-flex nav.burguer {
     display: none;
   }
-  div.wrapper-flex nav.menu-desk {
+
+  nav.menu-desk {
     display: block;
   }
-  div.wrapper-flex nav.menu-desk ul li a {
+  nav.menu-desk ul li a {
     padding: 1.1rem 1rem;
     font-size: 1.1rem;
   }
@@ -147,8 +165,33 @@ footer {
   nav.menu-footer {
     display: none;
   }
+
+  footer address {
+    padding-top: 1rem;
+    border-top: 2px solid gray;
+  }
 }
 @media screen and (min-width: 900px) {
+  section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section figure {
+    margin-left: 2%;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    padding-left: 5%;
+  }
+
+  h2 {
+    margin-left: -5%;
+    margin-right: -5%;
+    padding-left: 5%;
+  }
+
   section#geografia .geografia {
     display: flex;
   }
