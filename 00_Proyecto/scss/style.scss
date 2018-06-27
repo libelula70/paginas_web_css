@@ -26,10 +26,14 @@ body {
     color:$color_titulos;
 }
 
-section:not(figure) {
+section {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    
+    &:not(figure) {
+        
+    }
 }
 
 figure {
