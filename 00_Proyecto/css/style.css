@@ -41,6 +41,7 @@ table {
 }
 table tr th, table tr td {
   border: 1px solid;
+  padding: 0.5rem;
 }
 
 div.wrapper-flex {
@@ -194,22 +195,24 @@ footer address {
 
   section#geografia .geografia {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
   }
-  section#geografia img {
-    flex: 0 1 33%;
-    padding: 2rem;
-  }
-  section#geografia p {
-    flex: 0 1 33%;
-    padding: 2rem;
+  section#geografia figure {
+    flex: 0 1 39%;
+    margin-left: 0;
+    margin-right: 2%;
   }
   section#geografia table {
-    flex: 0 1 33%;
-    padding: 2rem;
+    flex: 0 1 59%;
+    margin-bottom: 2rem;
+  }
+  section#geografia p {
+    flex: 0 1 100%;
   }
 
   section#historia article {
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   section#historia article figure {
     float: right;

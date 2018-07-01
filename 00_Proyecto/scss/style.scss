@@ -53,6 +53,7 @@ table {
     tr {
         th, td {
         border: 1px solid;
+        padding: 0.5rem;
         }
     }
 }
@@ -229,31 +230,37 @@ footer  {
     section#geografia {
         .geografia {
             display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
             
         }
-        img {
-            flex: 0 1 33%;
-            padding: 2rem;
+        figure {
+            flex: 0 1 39%;
+            margin-left: 0;
+            margin-right: 2%;
+
+        }
+       
+        table {
+            flex: 0 1 59%;
+            margin-bottom: 2rem;
         }
         p {
-            flex: 0 1 33%;
-            padding: 2rem;
-        }
-        table {
-            flex: 0 1 33%;
-            padding: 2rem;
+            flex: 0 1 100%;
         }
     }
 
     section#historia {
         article {
-            overflow: hidden;
+            /* overflow: hidden; */
             figure {
                 float: right;
                 width: 45%;
             }
         }
     }
+
+    
     nav.menu-mobile { 
         ul {
             display: flex;
