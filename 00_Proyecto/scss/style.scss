@@ -113,6 +113,9 @@ h2 {
     font-family: $font_titulos;
     color: $color_titulos;
     border-bottom: 2px solid $borde;
+    &::first-letter {
+        font-size: 3rem; 
+    }
     
 }
 h3 {

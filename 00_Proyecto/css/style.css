@@ -94,6 +94,9 @@ h2 {
   color: #292727;
   border-bottom: 2px solid olive;
 }
+h2::first-letter {
+  font-size: 3rem;
+}
 
 h3 {
   font-size: 1.1rem;

@@ -21,13 +21,10 @@ nav ul li a {
   font-size: 0.8rem;
   font-weight: 700;
 }
-nav ul li a:hover {
-  background-color: olive;
-  color: lightskyblue;
-}
 
 h1 {
   font-family: "Markazi+Text", cursive;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -45,10 +42,22 @@ footer address {
   nav ul li a {
     font-size: 1rem;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 900px) {
   nav ul li a {
     font-size: 1.3rem;
+  }
+  nav ul li a:hover {
+    background-color: olive;
+    color: lightskyblue;
+  }
+
+  h1 {
+    font-size: 2.5rem;
   }
 }
 

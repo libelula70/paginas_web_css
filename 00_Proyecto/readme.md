@@ -2,7 +2,7 @@
 
 Estructura HTML
 Head: elementos necesarios y todos los metadatos que conozcas
-- Body: Estructuta semantica
+- Body: Estructuta semántica
 - Header y menu
 - Seciones:
     - Inicio
