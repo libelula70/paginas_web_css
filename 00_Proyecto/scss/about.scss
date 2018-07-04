@@ -1,3 +1,13 @@
+$font_titulos: 'Markazi+Text', cursive;
+$background_titulos: lightskyblue;
+$color_titulos: rgb(41, 39, 39);
+$borde: olive;
+
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+
 nav { 
     ul {
         display: flex;
@@ -16,11 +26,19 @@ nav {
                 padding: 0.5rem 0.8rem;
                 font-size: 0.8rem;
                 font-weight: 700;
+
+                &:hover {
+                    background-color: $borde;
+                    color: $background_titulos
+                }
             }
         }
     }
 }
 
+h1 {
+    font-family: $font_titulos;
+}
 footer  {
     border-top: 2px solid gray;
     padding-top: 1rem;

@@ -1,3 +1,7 @@
+body {
+  font-family: "roboto", sans-serif;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -16,6 +20,14 @@ nav ul li a {
   padding: 0.5rem 0.8rem;
   font-size: 0.8rem;
   font-weight: 700;
+}
+nav ul li a:hover {
+  background-color: olive;
+  color: lightskyblue;
+}
+
+h1 {
+  font-family: "Markazi+Text", cursive;
 }
 
 footer {
